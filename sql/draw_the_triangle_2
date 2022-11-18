@@ -1,0 +1,12 @@
+DECLARE @counter INT 
+SELECT @counter = 1
+
+-- Create a loop
+WHILE @counter <= 20
+
+-- Loop code starting point
+BEGIN
+    PRINT REPLICATE('* ', @counter)
+    SET @counter = @counter + 1
+-- Loop finish
+END
