@@ -1,0 +1,4 @@
+SELECT 
+  SUM(CASE WHEN device_type = 'laptop' THEN 1 ELSE 0 END) AS lap,
+  SUM(CASE WHEN device_type IN ('phone', 'tablet') THEN 1 ELSE 0 END) As mobile
+FROM viewership;
